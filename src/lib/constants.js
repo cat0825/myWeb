@@ -1,9 +1,9 @@
 import {
   GithubIcon,
-  TwitterIcon,
+  Music4Icon,
   LinkedinIcon,
-  InstagramIcon,
-  YoutubeIcon,
+  TvIcon,
+  MailMinusIcon,
   SparklesIcon,
   PencilLineIcon,
   NavigationIcon,
@@ -13,52 +13,50 @@ import {
 } from 'lucide-react'
 
 export const PROFILES = {
-  twitter: {
-    title: 'Twitter',
-    username: 'onurschu',
-    url: 'https://twitter.com/intent/user?screen_name=onurschu',
-    icon: <TwitterIcon size={16} />
+  网易云音乐: {
+    title: 'cloudmusic',
+    username: '羞涩男孩ooo',
+    url: 'https://y.music.163.com/m/user?id=414952014&dlt=0846&app_version=9.0.10',
+    icon: <Music4Icon size={16} />
   },
   github: {
     title: 'GitHub',
-    url: 'https://github.com/suyalcinkaya',
+    url: 'https://github.com/cat0825',
     icon: <GithubIcon size={16} />
   },
-  linkedin: {
-    title: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/suyalcinkaya',
-    icon: <LinkedinIcon size={16} />
+  // WeChat: {
+  //   title: 'WeChat',
+  //   onClick: () => {/* 逻辑来打开模态窗口 */},
+  //   icon: <LinkedinIcon size={16} />,
+  //   // 不再需要 href
+  // },
+  
+  抖音: {
+    title: 'douyin',
+    url: '5.:/Q w@s.Rk 09/15 【yuuri的个人主页】长按复制此条消息，长按复制打开抖音搜索，查看TA的更多作品##EHyGT3FGfJ8##[抖音口令]'
   },
-  medium: {
-    title: 'Medium',
-    url: 'https://suyalcinkaya.medium.com'
+  哔哩哔哩: {
+    title: 'bilibili',
+    url: 'https://space.bilibili.com/516159484',
+    icon: <TvIcon size={16} />
   },
-  instagram: {
-    title: 'Instagram',
-    url: 'https://www.instagram.com/jgrmn',
-    icon: <InstagramIcon size={16} />
+  Mail: {
+    title: 'mail',
+    url: 'https://mail.google.com/mail/u/0/#inbox',
+    icon: <MailMinusIcon size={16} />
   },
-  soundcloud: {
-    title: 'Soundcloud',
-    url: 'https://soundcloud.com/jagerman'
+ 微博: {
+    title: 'weibo',
+    url: 'https://weibo.com/u/7880785073'
   },
-  youtube: {
-    title: 'YouTube',
-    url: 'https://www.youtube.com/c/jagermanmusic',
-    icon: <YoutubeIcon size={16} />
-  },
-  bluesky: {
-    title: 'Bluesky',
-    url: 'https://staging.bsky.app/profile/onur.dev'
-  },
-  readcv: {
-    title: 'Read.cv',
-    url: 'https://read.cv/onur'
-  },
-  pinterest: {
-    title: 'Pinterest',
-    url: 'https://nl.pinterest.com/onurschu'
-  }
+  // readcv: {
+  //   title: 'Read.cv',
+  //   url: 'https://read.cv/onur'
+  // },
+  // pinterest: {
+  //   title: 'Pinterest',
+  //   url: 'https://nl.pinterest.com/onurschu'
+  // }
 }
 
 export const TWEETS_COLLECTION_ID = 15896982

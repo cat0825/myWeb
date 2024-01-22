@@ -26,13 +26,10 @@ export default async function Home() {
         <div className="content">
           <PageTitle title="Home" className="lg:hidden" />
           <p>
-            {`Hi 👋 I'm Onur (meaning "Honour" in English), a software engineer, dj, writer, and minimalist based in Amsterdam,
-          The Netherlands.`}
+            {`Hi 👋 这是我的一个个人网站,欢迎您的光临!`}
           </p>
           <p>
-            I develop things as a Senior Frontend Software Engineer at Bitvavo. Previously, I worked as a Senior
-            Frontend Software Engineer at heycar, Frontend Software Engineer at Yemeksepeti, Fullstack Software Engineer
-            at Sistas, Mobile Developer at Tanbula, and Specialist at Apple.
+            这里记录了我的日常生活,包括但不只限于技术文档,学习笔记,生活照片,发疯日常.
           </p>
           <Button asChild variant="link" className="inline px-0">
             <Link href="/writing">

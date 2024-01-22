@@ -1,17 +1,17 @@
 'use client'
 
-import { memo } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { ArrowUpRightIcon, AtSignIcon } from 'lucide-react'
+import React, { memo } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { ArrowUpRightIcon, AtSignIcon } from 'lucide-react';
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils';
 
-export const NavigationLink = memo(({ href, label, icon, shortcutNumber }) => {
-  const pathname = usePathname()
-  const iconCmp = icon ?? <AtSignIcon size={16} />
+export const NavigationLink = memo(({ href, label, icon, shortcutNumber, onClick }) => {
+  const pathname = usePathname();
+  const iconCmp = icon ?? <AtSignIcon size={16} />;
 
-  const isInternal = href.startsWith('/')
+  const isInternal = href && href.startsWith('/');
   if (!isInternal) {
     return (
       <a
@@ -62,4 +62,4 @@ export const NavigationLink = memo(({ href, label, icon, shortcutNumber }) => {
       )}
     </Link>
   )
-})
+});
