@@ -9,7 +9,7 @@ export async function GET() {
   const date = new Date()
   const siteURL = 'https://onur.dev'
   const author = {
-    name: 'Onur Şuyalçınkaya',
+    name: '千羽鶴',
     link: 'https://onur.dev'
   }
 

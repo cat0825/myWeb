@@ -41,3 +41,4 @@ Create a `.env` file similar to [`.env.example`](https://github.com/suyalcinkaya
 - [Raindrop](https://raindrop.io)
 - [Supabase](https://supabase.com)
 - [Vercel](https://vercel.com)
+

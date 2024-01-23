@@ -26,7 +26,7 @@ export default async function Home() {
         <div className="content">
           <PageTitle title="Home" className="lg:hidden" />
           <p>
-            {`Hi 👋 这是我的一个个人网站,欢迎您的光临!`}
+            {`Hi 👋 !`}
           </p>
           <p>
             这里记录了我的日常生活,包括但不只限于技术文档,学习笔记,生活照片,发疯日常.
@@ -37,7 +37,7 @@ export default async function Home() {
             </Link>
           </Button>
           <Suspense fallback={<LoadingSpinner />}>
-            <WritingList items={sortedPosts} header="Writing" />
+            <WritingList items={sortedPosts} header="随笔" />
           </Suspense>
         </div>
       </div>

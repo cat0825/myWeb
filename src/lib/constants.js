@@ -85,17 +85,17 @@ export const LINKS = [
   },
   {
     href: '/writing',
-    label: 'Writing',
+    label: '随笔',
     icon: <PencilLineIcon size={16} />
   },
   {
     href: '/journey',
-    label: 'Journey',
+    label: '随手一拍',
     icon: <NavigationIcon size={16} />
   },
   {
     href: '/stack',
-    label: 'Stack',
+    label: 'something important',
     icon: <Wand2Icon size={16} />
   },
   {

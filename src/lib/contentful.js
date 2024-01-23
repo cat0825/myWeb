@@ -1,7 +1,7 @@
 import { isDevelopment } from '@/lib/utils'
 
 async function fetchGraphQL(query, preview = isDevelopment) {
-  const res = await fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`, {
+  const res = await fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -18,12 +18,11 @@ async function fetchGraphQL(query, preview = isDevelopment) {
 export async function getAllPosts(preview = isDevelopment) {
   const entries = await fetchGraphQL(
     `query {
-      postCollection(preview: ${preview}) {
+      writing_api(preview: ${preview}) {
         items {
-          title
-          slug
-          date
+          myMad
           sys {
+            id
             firstPublishedAt
             publishedAt
           }
@@ -33,8 +32,9 @@ export async function getAllPosts(preview = isDevelopment) {
     preview
   )
 
-  return entries?.data?.postCollection?.items ?? []
+  return entries?.data?.wrting_apiCollection?.items ?? []
 }
+
 
 /* export async function getLast3Posts(preview = isDevelopment) {
   const entries = await fetchGraphQL(
